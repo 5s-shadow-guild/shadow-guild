@@ -1,0 +1,112 @@
+/*******************************************************
+ *
+ * Mobile styles and other media queries
+ *
+ *******************************************************/
+
+ 
+/* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
+@media only screen and (max-width: 1440px) {
+
+} 
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+} 
+
+
+/* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
+@media only screen and (max-width: 991px) {
+    #intro{
+        padding-top: 100px;
+    }
+    header{
+        padding: 20px 0;
+        top: 0;
+    }
+    header::before{
+        height: 100%;
+        opacity: 1;
+    }
+    #about .row > div{
+        width: 100%;
+    }
+    #about .row > .col-md-7{
+        margin-top: 60px;
+    }
+    p{
+        text-align: center;
+    }
+    .section-title h2{
+        text-align: center;
+    }
+    .wc-btn{
+        text-align: center;
+    }
+    .team-inner .col-md-3{
+        width: 50%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .team-inner .col-md-3:nth-child(even) {
+        margin-top: 0;
+    }
+    #join .col-md-6{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #join .col-md-6:last-child{
+        margin-bottom: 0;
+    }
+    .tagline-wrap h1 span.main-tagline{
+        width: 100%;
+    }
+    .gallery-wrap a{
+        padding: 5px;
+    }
+    .main-nav{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .new-team-row .col-md-6{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .new-team-row .col-md-6:last-child{
+        margin: 0;
+    }
+} 
+
+/* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
+@media only screen and (max-width: 767px) {
+    .gallery-wrap a{
+        padding: 2px;
+    }
+
+}
+@media only screen and (max-width: 580px){
+    .tagline-wrap h1 span.main-tagline{
+        font-size: 40px;
+    }
+    .tagline-wrap h1 span:not(.main-tagline){
+        font-size: 20px;
+    }
+    .section-title span{
+        font-size: 20px;
+    }
+    .team-main-slider{
+        width: 100%;
+    }
+
+}
+/* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 
+@media only screen and (max-width: 480px) {
+    
+}
+ 
