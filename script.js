@@ -64,7 +64,7 @@
                 // Smooth scroll to the target section with a duration of 500 milliseconds
                 $('html, body').animate({
                     scrollTop: targetSection.offset().top - 82
-                }, 500); // Adjust the animation speed as needed
+                }, 0); // Adjust the animation speed as needed
             });
             
             $('.mobile-nav li a').on('click', function(event) {
@@ -76,14 +76,14 @@
                 // Smooth scroll to the target section with a duration of 500 milliseconds
                 $('html, body').animate({
                     scrollTop: targetSection.offset().top - 82
-                }, 500); // Adjust the animation speed as needed
+                }, 0); // Adjust the animation speed as needed
             });
             
             $('a.join-us-link').on('click', function(event) {
                 event.preventDefault(); // Prevent the default link behavior
                 $('html, body').animate({
                     scrollTop: $('#join').offset().top - 82
-                }, 500); // Duration of the animation in milliseconds
+                }, 0); // Duration of the animation in milliseconds
             });
 		},
         initFixedHeader :function(){
@@ -207,7 +207,7 @@
                 if ($(window).width() <= 991) {
                     $('html, body').animate({
                         scrollTop: $('.team-main-slider').offset().top - 150
-                    }, 500);
+                    }, 0);
                 }
             });  
             
