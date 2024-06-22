@@ -47,6 +47,9 @@
     .wc-btn{
         text-align: center;
     }
+    #team{
+        padding: 120px 15px 100px;
+    }
     .team-inner .col-md-3{
         width: 50%;
         padding: 0 5px;
