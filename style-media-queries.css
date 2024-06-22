@@ -25,7 +25,7 @@
         padding-top: 100px;
     }
     header{
-        padding: 20px 0;
+        padding: 26.5px 0;
         top: 0;
     }
     header::before{
@@ -83,6 +83,9 @@
     }
     .section-bg canvas{
         background-attachment: scroll;
+    }
+    header .header-logo img{
+        max-width: 150px;
     }
 } 
 
