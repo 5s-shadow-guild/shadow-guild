@@ -44,6 +44,9 @@ ul{
     background-repeat: no-repeat;
     opacity: 1;
 }
+.safari-true .section-bg canvas{
+    background-attachment: scroll;
+}
 .img-wrap {
     position: relative;
 }

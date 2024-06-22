@@ -15,7 +15,7 @@
 }
 
 @media only screen and (max-width: 1199px) {
-
+    
 } 
 
 
@@ -80,6 +80,9 @@
     }
     .new-team-row .col-md-6:last-child{
         margin: 0;
+    }
+    .section-bg canvas{
+        background-attachment: scroll;
     }
 } 
 

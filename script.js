@@ -203,6 +203,12 @@
                 $('.team-main-slider img').removeClass('active').eq(index).addClass('active');
                 $('.team-name-slider div').removeClass('active');
                 $(this).addClass('active');
+                
+                if ($(window).width() <= 991) {
+                    $('html, body').animate({
+                        scrollTop: $('.team-main-slider').offset().top - 150
+                    }, 500);
+                }
             });  
             
         },
