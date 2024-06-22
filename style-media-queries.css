@@ -22,7 +22,7 @@
 /* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
 @media only screen and (max-width: 991px) {
     #intro{
-        padding-top: 100px;
+        padding-top: 82px;
     }
     header{
         padding: 26.5px 0;
