@@ -67,6 +67,7 @@
     }
     .tagline-wrap h1 span.main-tagline{
         width: 100%;
+        border: none;
     }
     .gallery-wrap a{
         padding: 5px;
