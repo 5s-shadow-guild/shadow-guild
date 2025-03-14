@@ -136,7 +136,7 @@
             $('.gallery-wrap img').each(function() {
                 var imgSrc = $(this).attr('src');
                 var imgAlt = $(this).attr('alt');
-                $(this).wrap('<a href="' + imgSrc + '" data-lightbox="gallery" data-title="' + imgAlt + '"></a>');
+                $(this).wrap('<a href="' + imgSrc + '" data-lightbox="gallery"></a>');
             });
 
             // Initially hide all gallery-wrap elements after the third one
@@ -182,6 +182,13 @@
 
             // Append the sorted elements back to the parent container
             $teamMembers.appendTo('.team-inner');  
+            
+            var container = $('.team-name-slider');
+
+            container.children('div').sort(function(a, b){
+                return $(a).text().localeCompare($(b).text());
+            }).appendTo(container);
+
         },
         lightbox: function(){
             $('a[data-lightbox]').click(function(e) {
@@ -200,16 +207,24 @@
         teamSlider: function(){
             $('.team-name-slider div').on('click', function(){
                 var index = $(this).data('index');
-                $('.team-main-slider img').removeClass('active').eq(index).addClass('active');
+
+                // Remove active class from all
+                $('.team-main-slider img').removeClass('active');
                 $('.team-name-slider div').removeClass('active');
+
+                // Add active class to clicked element
                 $(this).addClass('active');
-                
+
+                // Find and add active class to corresponding image
+                $('.team-main-slider img[data-img="' + index + '"]').addClass('active');
+
                 if ($(window).width() <= 991) {
                     $('html, body').animate({
                         scrollTop: $('.team-main-slider').offset().top - 150
                     }, 0);
                 }
-            });  
+            });
+ 
             
         },
         
